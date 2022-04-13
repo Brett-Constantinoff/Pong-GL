@@ -28,7 +28,6 @@ class TextRenderer{
         TextRenderer();
         void loadFont(std::string font, uint32_t fontSize);
         void render(std::string text, glm::vec2 pos, float size, glm::vec3 colour, bool centered);
-        ~TextRenderer();
     
     private:
         void init( void );
