@@ -20,4 +20,6 @@
   - Application design and orginization 
 
   
+<img width="1278" alt="Screen Shot 2022-04-13 at 11 10 32 AM" src="https://user-images.githubusercontent.com/77081808/163234585-64357c0b-aa74-487e-9c2c-7e5079324b3a.png">
+<img width="1277" alt="Screen Shot 2022-04-13 at 11 10 55 AM" src="https://user-images.githubusercontent.com/77081808/163234592-c54cf2d1-0e6c-48be-99e6-3ff14cc0ef8b.png">
 
