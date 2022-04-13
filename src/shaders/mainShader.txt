@@ -1,19 +1,32 @@
 #shader vertexShader
 #version 330 core
-layout (location = 0) in vec3 aPos;
+layout (location = 0) in vec4 aPos;
 
-out vec3 fColor;
+uniform mat4 uTransform;
+uniform mat4 uProjection;
+
+out vec2 oTextCoord;
 
 void main()
-{
-    gl_Position = vec4(aPos, 1.0);
+{   oTextCoord = aPos.zw;
+    gl_Position =  uProjection * uTransform * vec4(aPos.xy, 0.0f, 1.0);
 }
 
 #shader fragmentShader
 #version 330 core
 
+in vec2 oTextCoord;
+
 out vec4 fragColour;
+uniform vec3 uColour;
+uniform sampler2D image;
+uniform int uIsBackground;
 
 void main(){
-    fragColour = vec4(1.0f, 0.0f, 0.0f, 1.0f);
+    if(uIsBackground == 0){
+        fragColour = texture(image, oTextCoord);
+    }
+    else{
+        fragColour = vec4(uColour, 1.0f) * texture(image, oTextCoord);
+    }
 }

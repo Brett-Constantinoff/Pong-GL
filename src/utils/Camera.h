@@ -7,17 +7,17 @@
 #include <GLFW/glfw3.h>
 
 class Camera{
-    private:
+    public:
+        Camera(glm::vec3 position, glm::vec3 front, glm::vec3 up);
+        void move(GLFWwindow **win, float dt);
+        glm::mat4* getView( void );
+     private:
         glm::mat4 mView;
         glm::vec3 mPosition;
         glm::vec3 mFront;
         glm::vec3 mUp;
         float mYaw = -90.0f;
         float mPitch = 0.0f;
-    public:
-        Camera(glm::vec3 position, glm::vec3 front, glm::vec3 up);
-        void move(GLFWwindow **win, float dt);
-        glm::mat4* getView( void );
 
 };
 

@@ -1,9 +1,23 @@
-# OpenGL-Boiler-Plate
+# Pong-GL
 
-* The main idea behind this repo is to have an easy way to write OpenGL code (for myself) and start new projects
-* Using this boiler plate system is fast, easy and takes care of all the required OpenGL initialization one would have to go
-  through and allows the user to jump straight into rendering, Yay!
-* The only thing you need to do per project is:
-    - change the width, height and name of the window in Context.h
-    - define any attributes / methods your program needs in App.h
-    - fill in App.cpp and render to your hearts desire
+* Pong clone made entirely in OpenGL
+* Noteable features include :
+  - AABB vs AABB collision detection
+  - Improved program design
+  - Dynamic text rendering
+  - Textured objects
+  - Sound effects
+  - First project utilizing an improved Makefile design
+
+* Things to improve upon:
+  - Better textures
+  - Improved collision detection for rotating objects
+  - More visual effects, post processing
+
+* Things learned: 
+  - Text rendering
+  - Better understanding of OpenGL
+  - Application design and orginization 
+
+  
+
